@@ -1,2 +1,5 @@
 site_name: My Docs
 theme: readthedocs
+plugins:
+  - search
+  - mkdocstrings

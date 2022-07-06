@@ -11,17 +11,17 @@ Tutorial](https://docs.readthedocs.io/en/stable/tutorial/index.html).
 
 📚 [docs/](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/)
 
-:   A basic Sphinx project lives in `docs/`, it was generated using
+    A basic Sphinx project lives in `docs/`, it was generated using
     Sphinx defaults. All the `*.rst` make up sections in the
     documentation.
 
 ⚙️ [.readthedocs.yaml](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/.readthedocs.yaml)
 
-:   Read the Docs Build configuration is stored in `.readthedocs.yaml`.
+   Read the Docs Build configuration is stored in `.readthedocs.yaml`.
 
 📍 [docs/requirements.txt](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt) and [docs/requirements.in](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in)
 
-:   Python dependencies are
+    Python dependencies are
     [pinned](https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html)
     (uses [pip-tools](https://pip-tools.readthedocs.io/en/latest/)).
 
@@ -33,32 +33,32 @@ Tutorial](https://docs.readthedocs.io/en/stable/tutorial/index.html).
 
 💡 [docs/usage.rst](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/usage.rst)
 
-:   Sphinx can automatically extract API documentation directly from
+    Sphinx can automatically extract API documentation directly from
     Python modules, using for instance the `:autofunction:` directive.
 
 💡 [lumache.py](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/lumache.py)
 
-:   API docs are generated for this example Python module - they use
+    API docs are generated for this example Python module - they use
     *docstrings* directly in the documentation, notice how this shows up
     in the rendered documentation.
 
 🔢 Git tags versioning
 
-:   We use a basic versioning mechanism by adding a git tag for every
+    We use a basic versioning mechanism by adding a git tag for every
     release of the example project. All releases and their version
     numbers are visible on
     [example-sphinx-basic.readthedocs.io](https://example-sphinx-basic.readthedocs.io/en/latest/).
 
 📜 [README.rst](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/README.rst)
 
-:   Contents of this `README.rst` are visible on Github and included on
+    Contents of this `README.rst` are visible on Github and included on
     [the documentation index
     page](https://example-sphinx-basic.readthedocs.io/en/latest/)
     (Don\'t Repeat Yourself).
 
 ⁉️ Questions / comments
 
-:   If you have questions related to this example, feel free to can ask
+    If you have questions related to this example, feel free to can ask
     them as a Github issue
     [here](https://github.com/readthedocs-examples/example-sphinx-basic/issues).
 

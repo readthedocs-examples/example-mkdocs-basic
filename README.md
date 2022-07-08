@@ -3,16 +3,10 @@ Example: Basic MkDocs project for Read the Docs
 
 [![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
 
-This example shows the an integration of a basic MkDocs project with
-Read the Docs. You\'re encouraged to view it to get inspiration and copy
-& paste from the files in the source code. If you are using Read the
-Docs for the first time, have a look at the official [Read the Docs
-Tutorial](https://docs.readthedocs.io/en/stable/tutorial/index.html).
+This example shows the an integration of a basic MkDocs project with Read the Docs. You\'re encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official [Read the Docs Tutorial](https://docs.readthedocs.io/en/stable/tutorial/index.html).
 
 📚 [docs/](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/)<br>
-A basic MkDocs project lives in `docs/`, it was generated using
-MkDocs defaults. All the `*.md` make up sections in the
-documentation.
+A basic MkDocs project lives in `docs/`, it was generated using MkDocs defaults. All the `*.md` make up sections in the documentation.
 
 ⚙️ [.readthedocs.yaml](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/.readthedocs.yaml)<br>
 Read the Docs Build configuration is stored in `.readthedocs.yaml`.
@@ -21,9 +15,7 @@ Read the Docs Build configuration is stored in `.readthedocs.yaml`.
 A basic [MkDocs configuration](https://www.mkdocs.org/user-guide/configuration/) is stored here, including a few extensions for MkDocs and Markdown. Add your own configurations here, such as extensions and themes. Remember that many extensions and themes require additional Python packages to be installed.
 
 📍 [docs/requirements.txt](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/requirements.txt) and [docs/requirements.in](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/requirements.in)<br>
-Python dependencies are
-[pinned](https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html)
-(uses [pip-tools](https://pip-tools.readthedocs.io/en/latest/)) here. Make sure to add your Python dependencies to `requirements.txt` or if you choose [pip-tools](https://pip-tools.readthedocs.io/en/latest/), edit `docs/requirements.in` and remember to run to run `pip-compile docs/requirements.in`.
+Python dependencies are [pinned](https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html) (uses [pip-tools](https://pip-tools.readthedocs.io/en/latest/)) here. Make sure to add your Python dependencies to `requirements.txt` or if you choose [pip-tools](https://pip-tools.readthedocs.io/en/latest/), edit `docs/requirements.in` and remember to run to run `pip-compile docs/requirements.in`.
 
 💡 [docs/api.md](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/api.md)<br>
 We add our example Python module `lumache` in order to auto-generate an API reference. To do this, we use the `:::` syntax, you can read more in the [mkdocstrings documentation](https://mkdocstrings.github.io/).
@@ -39,10 +31,7 @@ We use a basic versioning mechanism by adding a git tag for every release of the
 [example-mkdocs-basic.readthedocs.io](https://example-mkdocs-basic.readthedocs.io/en/latest/).
 
 📜 [README.rst](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/README.rst)<br>
-Contents of this `README.md` are visible on Github and included on
-[the documentation index
-page](https://example-mkdocs-basic.readthedocs.io/en/latest/)
-(Don\'t Repeat Yourself).
+Contents of this `README.md` are visible on Github and included on [the documentation index page](https://example-mkdocs-basic.readthedocs.io/en/latest/) (Don\'t Repeat Yourself).
 
 ⁉️ Questions / comments<br>
 If you have questions related to this example, feel free to can ask them as a Github issue [here](https://github.com/readthedocs-examples/example-mkdocs-basic/issues).
@@ -66,25 +55,18 @@ mkdocs serve
 Using the example in your own project
 -------------------------------------
 
-If you are new to Read the Docs, you may want to refer to the [Read the
-Docs User documentation](https://docs.readthedocs.io/).
+If you are new to Read the Docs, you may want to refer to the [Read the Docs User documentation](https://docs.readthedocs.io/).
 
-If you are copying this code in order to get started with your
-documentation, you need to:
+If you are copying this code in order to get started with your documentation, you need to:
 
 -   Create a new repository on Github, GitLab, Bitbucket or another host
     supported by Read the Docs
 -   Customize all `docs/*.md` files and copy in `mkdocs.yaml`
--   Add your own Python project, replacing the `pyproject.toml`
-    configuration and `lumache.py` module.
+-   Add your own Python project, replacing the `pyproject.toml` configuration and `lumache.py` module.
 -   Rebuild the documenation locally to see that it works.
--   Register your project on Read the Docs, see [Importing Your
-    Documentation](https://docs.readthedocs.io/en/stable/intro/import-guide.html).
+-   Register your project on Read the Docs, see [Importing Your Documentation](https://docs.readthedocs.io/en/stable/intro/import-guide.html).
 
 Read the Docs tutorial
 ----------------------
 
-To get started with Read the Docs, you may also refer to the [Read the
-Docs tutorial](https://docs.readthedocs.io/en/stable/tutorial/). It
-provides a full walk-through of building an example project similar to
-the one in this repository.
+To get started with Read the Docs, you may also refer to the [Read the Docs tutorial](https://docs.readthedocs.io/en/stable/tutorial/). It provides a full walk-through of building an example project similar to the one in this repository.

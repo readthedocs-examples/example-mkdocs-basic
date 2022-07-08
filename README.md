@@ -61,7 +61,8 @@ If you are copying this code in order to get started with your documentation, yo
 
 1. place your `docs/` folder alongside your Python project. If you are starting a new project, you can adapt the `pyproject.toml` example configuration.
 1. use your existing project repository or create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs.
-1. copy in `mkdocs.yaml`, `.readthedocs.yml` and the `docs/` folder into your project. Customize all the files, replacing example contents.
+1. copy `mkdocs.yml`, `.readthedocs.yaml` and the `docs/` folder into your project.
+1. customize all the files, replacing example contents.
 1. Rebuild the documenation locally to see that it works.
 1. *Finally*, register your project on Read the Docs, see [Importing Your Documentation](https://docs.readthedocs.io/en/stable/intro/import-guide.html).
 

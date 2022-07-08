@@ -1,100 +1,66 @@
-Example: Basic Sphinx project for Read the Docs
+Example: Basic MkDocs project for Read the Docs
 ===============================================
 
-[![Documentation Status](https://readthedocs.org/projects/example-sphinx-basic/badge/?version=latest)](https://example-sphinx-basic.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/example-mkdocs-basic/badge/?version=latest)](https://example-mkdocs-basic.readthedocs.io/en/latest/?badge=latest)
 
-This example shows the an integration of a basic Sphinx project with
+This example shows the an integration of a basic MkDocs project with
 Read the Docs. You\'re encouraged to view it to get inspiration and copy
 & paste from the files in the source code. If you are using Read the
 Docs for the first time, have a look at the official [Read the Docs
 Tutorial](https://docs.readthedocs.io/en/stable/tutorial/index.html).
 
-📚 [docs/](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/)
+📚 [docs/](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/)<br>
+A basic MkDocs project lives in `docs/`, it was generated using
+MkDocs defaults. All the `*.md` make up sections in the
+documentation.
 
-    A basic Sphinx project lives in `docs/`, it was generated using
-    Sphinx defaults. All the `*.rst` make up sections in the
-    documentation.
+⚙️ [.readthedocs.yaml](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/.readthedocs.yaml)<br>
+Read the Docs Build configuration is stored in `.readthedocs.yaml`.
 
-⚙️ [.readthedocs.yaml](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/.readthedocs.yaml)
+⚙️ [mkdocs.yml](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/mkdocs.yaml)<br>
+A basic [MkDocs configuration](https://www.mkdocs.org/user-guide/configuration/) is stored here, including a few extensions for MkDocs and Markdown. Add your own configurations here, such as extensions and themes. Remember that many extensions and themes require additional Python packages to be installed.
 
-   Read the Docs Build configuration is stored in `.readthedocs.yaml`.
+📍 [docs/requirements.txt](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/requirements.txt) and [docs/requirements.in](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/requirements.in)<br>
+Python dependencies are
+[pinned](https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html)
+(uses [pip-tools](https://pip-tools.readthedocs.io/en/latest/)) here. Make sure to add your Python dependencies to `requirements.txt` or if you choose [pip-tools](https://pip-tools.readthedocs.io/en/latest/), edit `docs/requirements.in` and remember to run to run `pip-compile docs/requirements.in`.
 
-📍 [docs/requirements.txt](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt) and [docs/requirements.in](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in)
+💡 [docs/api.md](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/api.md)<br>
+We add our example Python module `lumache` in order to auto-generate an API reference. To do this, we use the `:::` syntax, you can read more in the [mkdocstrings documentation](https://mkdocstrings.github.io/).
 
-    Python dependencies are
-    [pinned](https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html)
-    (uses [pip-tools](https://pip-tools.readthedocs.io/en/latest/)).
+💡 [docs/usage.md](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/docs/usage.md)<br>
+We also include some direct links to a function from the API reference, as well as embedding documentation for the example function `lumache.get_random_recipe`. This functionality is also from the [mkdocstrings](https://mkdocstrings.github.io/python/) extension.
 
-💡 [docs/api.rst](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/api.rst)
+💡 [lumache.py](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/lumache.py)<br>
+API docs are generated for this example Python module - they use *docstrings* directly in the documentation, notice how this shows up in the rendered documentation. We use the [Sphinx convention](https://pythonhosted.org/an_example_pypi_project/sphinx.html#function-definitions) for docstrings, however you are free to edit `mkdocs.yml` to change this option to `google` or `numpy`.
 
-:   By adding our example Python module `lumache` in the
-    reStructuredText directive `:autosummary:`, Sphinx will
-    automatically scan this module and generate API docs.
+🔢 Git tags versioning<br>
+We use a basic versioning mechanism by adding a git tag for every release of the example project. All releases and their version numbers are visible on
+[example-mkdocs-basic.readthedocs.io](https://example-mkdocs-basic.readthedocs.io/en/latest/).
 
-💡 [docs/usage.rst](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/usage.rst)
+📜 [README.rst](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/README.rst)<br>
+Contents of this `README.md` are visible on Github and included on
+[the documentation index
+page](https://example-mkdocs-basic.readthedocs.io/en/latest/)
+(Don\'t Repeat Yourself).
 
-    Sphinx can automatically extract API documentation directly from
-    Python modules, using for instance the `:autofunction:` directive.
+⁉️ Questions / comments<br>
+If you have questions related to this example, feel free to can ask them as a Github issue [here](https://github.com/readthedocs-examples/example-mkdocs-basic/issues).
 
-💡 [lumache.py](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/lumache.py)
 
-    API docs are generated for this example Python module - they use
-    *docstrings* directly in the documentation, notice how this shows up
-    in the rendered documentation.
+Example Project usage
+---------------------
 
-🔢 Git tags versioning
+This project has a standard MkDocs layout which is built by Read the Docs almost the same way that you would build it locally (on your own laptop!).
 
-    We use a basic versioning mechanism by adding a git tag for every
-    release of the example project. All releases and their version
-    numbers are visible on
-    [example-sphinx-basic.readthedocs.io](https://example-sphinx-basic.readthedocs.io/en/latest/).
+You can build and view this documentation project locally - we recommend that you activate [a local Python virtual environment first](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment):
 
-📜 [README.rst](https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/README.rst)
-
-    Contents of this `README.rst` are visible on Github and included on
-    [the documentation index
-    page](https://example-sphinx-basic.readthedocs.io/en/latest/)
-    (Don\'t Repeat Yourself).
-
-⁉️ Questions / comments
-
-    If you have questions related to this example, feel free to can ask
-    them as a Github issue
-    [here](https://github.com/readthedocs-examples/example-sphinx-basic/issues).
-
-Sphinx Example Project usage
-----------------------------
-
-This project has a standard Sphinx layout which is built by Read the
-Docs almost the same way that you would build it locally (on your own
-laptop!).
-
-You can build and view this documentation project locally - we recommend
-that you activate [a local Python virtual environment
-first](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment):
-
-``` {.console}
-# Install required Python dependencies (Sphinx etc.)
+```console
+# Install required Python dependencies (MkDocs etc.)
 pip install -r docs/requirements.txt
 
-# Enter the Sphinx project
-cd docs/
-
-# Run the raw sphinx-build command
-sphinx-build -M html . _build/
-```
-
-You can also build the documentation locally with `make`:
-
-``` {.console}
-# Enter the Sphinx project
-cd docs/
-
-# Build with make
-make html
-
-# Open with your preferred browser, pointing it to the documentation index page
-firefox _build/html/index.html
+# Run the mkdocs development server
+mkdocs serve
 ```
 
 Using the example in your own project
@@ -108,7 +74,7 @@ documentation, you need to:
 
 -   Create a new repository on Github, GitLab, Bitbucket or another host
     supported by Read the Docs
--   Customize all `docs/*.rst` files
+-   Customize all `docs/*.md` files and copy in `mkdocs.yaml`
 -   Add your own Python project, replacing the `pyproject.toml`
     configuration and `lumache.py` module.
 -   Rebuild the documenation locally to see that it works.

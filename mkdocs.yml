@@ -1,5 +1,9 @@
 site_name: Basic MkDocs Example Project
-site_url: !ENV MKDOCS_SITE_URL
+# Until https://github.com/readthedocs/readthedocs.org/issues/9781 is fixed, you need to
+# define CUSTOM_CANONICAL_URL yourself as a workaround.
+# (don't expose it to PRs, they build on different URLs)
+# For instance, define it as https://SLUG.readthedocs.io/en/stable/
+site_url: !ENV [READTHEDOCS_CANONICAL_URL, CUSTOM_CANONICAL_URL, ""]
 theme:
   name: readthedocs
   highlightjs: true

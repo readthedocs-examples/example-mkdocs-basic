@@ -10,7 +10,7 @@ site_name: Basic MkDocs Example Project
 # For instance, navigate to Admin => Environment and define
 # CUSTOM_CANONICAL_URL=https://SLUG.readthedocs.io/en/stable/
 # (don't expose it to PRs, they publish on different URLs)
-site_url: "!ENV [READTHEDOCS_CANONICAL_URL, CUSTOM_CANONICAL_URL, '']"
+site_url: !ENV CUSTOM_CANONICAL_URL
 
 theme:
   name: readthedocs

@@ -1,4 +1,5 @@
 site_name: Basic MkDocs Example Project
+site_url: !ENV MKDOCS_SITE_URL
 theme:
   name: readthedocs
   highlightjs: true

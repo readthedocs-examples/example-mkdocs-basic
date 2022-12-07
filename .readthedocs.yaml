@@ -11,8 +11,19 @@ version: 2
 #   tools:
 #     python: "3.10"
 
+# This pattern will be supported by a better environment variable, proposed
+# here: TBD
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.10"
+  jobs:
+    pre_build:
+      - export "MKDOCS_SITE_URL=$READTHEDOCS_PROJECT"
+  
 mkdocs:
   configuration: mkdocs.yml
+  fail_on_warning: true
 
 # Optionally declare the Python requirements required to build your docs
 python:

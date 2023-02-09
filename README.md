@@ -30,7 +30,7 @@ API docs are generated for this example Python module - they use *docstrings* di
 We use a basic versioning mechanism by adding a git tag for every release of the example project. All releases and their version numbers are visible on
 [example-mkdocs-basic.readthedocs.io](https://example-mkdocs-basic.readthedocs.io/en/latest/).
 
-📜 [README.rst](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/README.rst)<br>
+📜 [README.md](https://github.com/readthedocs-examples/example-mkdocs-basic/blob/main/README.md)<br>
 Contents of this `README.md` are visible on Github and included on [the documentation index page](https://example-mkdocs-basic.readthedocs.io/en/latest/) (Don\'t Repeat Yourself).
 
 ⁉️ Questions / comments<br>

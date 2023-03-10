@@ -1,15 +1,9 @@
-{!README.md!}
+欢迎来到Readm的个人博客
+===================================
 
-# Welcome to Lumache's documentation!
+工作之后基本没有更新过博客，但是最近打算写一些系统化的分享。
+重新找到了ReadtheDoc这个工具，比较适合写结构化高的内容。
 
-**Lumache** (/lu\'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients. It pulls data from the
-[Open Food Facts database](https://world.openfoodfacts.org/) and offers
-a *simple* and *intuitive* API.
+目前最希望完成的是关于CPU安全的综述，欢迎各位研究者拍砖，部分章节个人能力不足，也欢迎各位的参与。可以直接在本blog的对应github项目中贡献，谢谢。
 
-Check out the [usage](usage) section for further information, including how to [install](usage#installation) the project.
-
-!!! note
-
-    This project is under active development.
-
+其他零散博客仍然可以在旧的网址 [Readm's Blog](http://readm.tech/) 中找到，后续有时间可能会陆续搬运进来。

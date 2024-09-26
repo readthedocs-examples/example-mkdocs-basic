@@ -1,4 +1,17 @@
 site_name: Basic MkDocs Example Project
+
+# This setting is required for Canonical URLs.
+# You can read more about why you should consider using this:
+# https://docs.readthedocs.io/en/stable/canonical-urls.html
+#
+# Until https://github.com/readthedocs/readthedocs.org/issues/9781 is fixed,
+# you need to define CUSTOM_CANONICAL_URL yourself as a workaround.
+#
+# For instance, navigate to Admin => Environment and define
+# CUSTOM_CANONICAL_URL=https://SLUG.readthedocs.io/en/stable/
+# (don't expose it to PRs, they publish on different URLs)
+site_url: !ENV CUSTOM_CANONICAL_URL
+
 theme:
   name: readthedocs
   highlightjs: true
